@@ -2,7 +2,7 @@ package Functions;
 
 import java.util.Scanner;
 
-public class FirstFunction {
+public class SumFunction {
     public static void main(String[] args) {
         sum();
     }

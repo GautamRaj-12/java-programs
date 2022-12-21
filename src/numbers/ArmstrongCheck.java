@@ -2,7 +2,7 @@ package numbers;
 
 import java.util.Scanner;
 
-public class ArmstrongNumber {
+public class ArmstrongCheck {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

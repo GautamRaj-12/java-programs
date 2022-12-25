@@ -8,10 +8,11 @@ public class InputArray {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter array elements: ");
-
+        //Input
         for(int i=0;i<marks.length;i++){
             marks[i] = sc.nextInt();
         }
+        //Output
         System.out.println("The array entered is: ");
         for(int i=0;i<marks.length;i++){
             System.out.println(marks[i]);

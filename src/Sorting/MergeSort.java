@@ -14,8 +14,24 @@ public class MergeSort {
         }
         int mid = arr.length/2;
 
-        int[] left = Arrays.copyOfRange(arr,0,mid);
-        int[] right = Arrays.copyOfRange(arr,mid,arr.length);
+        /****Automatic Copy of Array using copyOfRange function****/
+//        int[] left = mergeSort(Arrays.copyOfRange(arr,0,mid));
+//        int[] right = mergeSort(Arrays.copyOfRange(arr,mid,arr.length));
+
+        /****Manual Copy of Array****/
+        int[] left = new int[mid];
+        int[] right = new int[arr.length - mid];
+
+        // Manual copy for left array
+        for (int i = 0; i < mid; i++) {
+            left[i] = arr[i];
+        }
+        // Manual copy for right array
+        for (int i = mid; i < arr.length; i++) {
+            right[i - mid] = arr[i];
+        }
+        left = mergeSort(left);
+        right = mergeSort(right);
 
         return merge(left,right);
     }
@@ -40,7 +56,7 @@ public class MergeSort {
             i++;
             k++;
         }
-        while(i< second.length){
+        while(j< second.length){
             mix[k] = second[j];
             j++;
             k++;

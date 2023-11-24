@@ -3,7 +3,7 @@ package BinarySearchIntQues;
 public class NextGreatestLetter {
     public static void main(String[] args) {
         char[] letters = {'c','f','j'};
-        char target = 'z';
+        char target = 'a';
 
         System.out.println("Next greatest letter is: "+nextGreatestLetter(letters,target));
     }
